@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-express-learning",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/RayssaCorreia/nodejs-express-learning.git"
+  },
+  "author": " <rayssamicorreia@gmail.com>",
+  "license": "MIT",
+  "description": "",
+  "bugs": {
+    "url": "https://github.com/RayssaCorreia/nodejs-express-learning/issues"
+  },
+  "homepage": "https://github.com/RayssaCorreia/nodejs-express-learning#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
+  
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
+  }
+}
