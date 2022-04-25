@@ -16,9 +16,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/app.js"
-  
   },
   "dependencies": {
+    "axios": "^0.27.0",
     "cors": "^2.8.5",
     "express": "^4.17.3"
   }
