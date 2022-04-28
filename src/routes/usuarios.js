@@ -38,7 +38,7 @@ router.post('/', (req, res) => {
 // Apagar tudo que está dentro de usuarios
 router.delete('/', (req,res)=>{
     usuarios = [];
-    //contador = 0;
+    contador = 0;
                     //envia para o servidor
     res.status(200).send()
 })
