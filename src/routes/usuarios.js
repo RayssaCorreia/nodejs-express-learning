@@ -1,9 +1,16 @@
 const express = require('express')
 const router = express.Router()
 
+const validador = require('express-validator')
 //Vetor: seu valor pode ser alterado
 let usuarios = [];
 let contador = 0;
+
+//Não entendi muito bem essa parte, ele valida só números?
+const validar = [
+    validador.check('usuarios').isLength({min: 1}).withMessage('Field temperature can not be null')
+
+]
 
 //enviar dados pelo servidor 
 router.get('/', (req, res) => {
