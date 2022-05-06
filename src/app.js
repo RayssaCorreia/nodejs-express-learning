@@ -14,10 +14,10 @@ server.use('/usuarios', usuarios)
 server.use(express.static('public'))
 
 server.get('/', (req, res)=>{
-    res.status(200).sendFile(path.join(_dirname, "visualizar", "index.html"))
+    res.status(200).sendFile(path.join(__dirname, "visualizar", "index.html"))
 })
 
-server.use((req,res) => res.status(404).sendFile(path.join(_dirname, "visualizar", "404.html")));
+server.use((req,res) => res.status(404).sendFile(path.join(__dirname, "visualizar", "404.html")));
 
 server.listen(port, () =>{
     console.log(`server running on port ${port}`)
