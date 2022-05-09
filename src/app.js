@@ -1,4 +1,5 @@
 const express = require('express')
+const mongoose = require('mongoose')
 const {json} = require('body-parser')
 const cors = require('cors')
 const path = require('path');
@@ -19,6 +20,17 @@ server.get('/', (req, res)=>{
 
 server.use((req,res) => res.status(404).sendFile(path.join(__dirname, "visualizar", "404.html")));
 
-server.listen(port, () =>{
-    console.log(`server running on port ${port}`)
+
+/// O QUE ESTÀ ACONTECENDO AQUI ?? /// Conexão com o banco de dados?
+const main = async () => {
+    await mongoose.connect(process.env.My_CONN);
+}
+
+
+main()
+.then(() => {
+    server.listen(port, () => {
+        console.log(`server running on port ${port}`)
+      })
 })
+.catch(err => console.log(err));
