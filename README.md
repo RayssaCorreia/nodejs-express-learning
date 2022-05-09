@@ -12,7 +12,7 @@ Pelo que entendi o JWT é tipo de um convite para uma festa, sem ele você não 
 São arquivos em texto amarzenados do lado do cliente, informações sobre a navegação pelas páginas de um site.
 Pelo que entendi quando você acitar um cookie, ele salvará dados que durante o uso site foi disponibilizados. Esses cookies são bem utilizados na parte de propagandas e marketing, como por exemplo você coloca um certo produto no carrinho e acaba não comprando, esses dados ficarão salvos nos cookies, após o fechamento do site aparecerá comerciais sobre esse tal produto. Ou seja eles são utilizados para indentificar usuarios e facilitar o transporte de dados.
 
-OBS: ajuntando os dois o "JTW" e convite da festa que te da a autentificação e o "cookies" são seus dados.
+OBS: ajuntando os dois o "JWT" e convite da festa que te da a autentificação e o "cookies" são seus dados.
 
 ### 2. Atualizar o sistema de autenticação básico da ultima aula para utilizar JWT.
 
