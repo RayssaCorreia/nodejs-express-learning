@@ -1,9 +1,9 @@
 const express = require('express')
 const router = express.Router()
-const Jogadores = require('../modelos/Jogadores')
-
 const validador = require('express-validator')
-const autentifica = require('../usuarios/autentifica')
+
+//mongoose
+const Jogadores = require('../modelos/Jogadores')
 
 //Não entendi muito bem essa parte, ele valida só números? Sim
 // ACHAR UMA VALIDAÇÂO POR LETRAS 
@@ -14,9 +14,9 @@ const validar = [
 
 ]
 
-//enviar dados pelo servidor 
+//puxar dados pelo servidor 
 router.get('/', (req, res) => {
-    //get responde as coisas que está em uogadores
+    //get responde as coisas que está em jogadores
     Jogadores.find().then(jogadores => {
         res.status(200).send(jogadores);
     }).catch(error => {
@@ -46,7 +46,7 @@ router.post('/', [validar], (req, res) => {
     }
 
     const jogadores = new Jogadores ({
-        uogadores: req.body.uogadores
+        numero: req.body.jogadores
     })
 
     jogadores.save()

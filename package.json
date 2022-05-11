@@ -15,12 +15,14 @@
   "homepage": "https://github.com/RayssaCorreia/nodejs-express-learning#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js"
+    "start": "nodemon src/app.js"
   },
   "dependencies": {
     "axios": "^0.27.2",
     "cors": "^2.8.5",
     "express": "^4.18.1",
-    "mongoose": "^6.3.3"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.3",
+    "nodemon": "^2.0.16"
   }
 }

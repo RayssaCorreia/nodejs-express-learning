@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const esquemadeJogadores= new mongoose.Schema(
     {
-        nome: Number
+        numero: Number
     }
 )
 

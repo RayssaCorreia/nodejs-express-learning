@@ -2,9 +2,11 @@ const express = require('express')
 const mongoose = require('mongoose')
 const {json} = require('body-parser')
 const cors = require('cors')
-const path = require('path');
+const path = require('path')
+const jwt = require('jsonwebtoken')
 
 const jogadores = require('./routes/jogadores')
+const users = require('./routes/users')
 
 const server = express()
 const port = 4001
@@ -12,6 +14,7 @@ const port = 4001
 server.use(json())
 server.use(cors())
 server.use('/jogadores', jogadores)
+server.use('/users', users)
 server.use(express.static('public'))
 
 server.get('/', (req, res)=>{
