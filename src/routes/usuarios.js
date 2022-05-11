@@ -9,7 +9,7 @@ const validador = require('express-validator')
 const validar = [
     validador.check('usuarios').isLength({min: 1}).withMessage('Usuarios não podem ser nulos'),
                                //Talvez isso de certo!!
-    validador.check('usuarios').IsLetter().withMessage('São aceitos somente letras, para nome de usuários')
+    validador.check('usuarios').isNumeric().withMessage('São aceitos somente letras, para nome de usuários')
 
 ]
 
@@ -37,7 +37,7 @@ router.get('/:id', (req,res)=>{
 })
 
 //solicitar a aceitação de dados (POST)
-router.post('/', [validate], (req, res) => {
+router.post('/', [validar], (req, res) => {
 
     const erros = validador.validationResult(req);
     if(!erros.isEmpty()){

@@ -18,13 +18,13 @@ function DadosDeUsuarios(){
                 id: 1,
                 nome: "Ary",
                 sobreNome: "Sil",
-                idade: 30,
+                idade: "30",
                 dataDeCadastramento: "03/03/2004"
             }, {
                 id: 2,
                 nome: "Mica",
                 sobreNome: "Sant",
-                idade: 55,
+                idade: "55",
                 dataDeCadastramento: "11/08/2005"
                 
             }])
