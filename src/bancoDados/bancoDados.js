@@ -11,7 +11,7 @@ function obterId (id){
     })
 }
 
-function DadosDeUsuarios(){
+function DadosDeJogadores(){
     return new Promise((resolve, reject) => {
         setTimeout(function(){
             resolve([{
@@ -33,7 +33,7 @@ function DadosDeUsuarios(){
 }
 
 async function pedido(id){
-    const tempObject = await DadosDeUsuarios()
+    const tempObject = await DadosDeJogadores()
     console.log(tempObject)
 
     return await obterId(id)

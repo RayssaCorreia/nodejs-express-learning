@@ -56,11 +56,11 @@ Imitando o mundo real, ela manipula objetos, através dos conceitos:<br>
 -SuperCollider<br>
 -Ruby<br>
 -VB.NET<br>
-<!-- ?-Python<br> ?-->
+-Python<br>
 
 ### 8. O que são classes e o que são objetos ?
 Classes: são ajuntamentos de objetos com caracteristicas semelhantes.<br>
-Objetos: são referências, variáveis espaços na memoria, onde você trabalha em cima.
+Objetos: são referências, variáveis espaços na memoria, onde você trabalha em cima de objetos.
 
 ### 9. Quais o quatro pilares da POO ? Descreva cada um deles com suas palavras. 
 - Encapsulamento: É uma forma de esconder coisas que não são necessárias saber, também como uma forma de segurança não mostrando todos os dados/acontecimentos em si. De uma forma mais visível é tipo de uma caixa preta ou qualquer objeto e coisa que faz algo, mas você nem tem ideia do que está acontecendo por traz.
