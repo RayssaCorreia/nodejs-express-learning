@@ -1,9 +1,17 @@
+// Conexão com o banco de dados 
 const mongoose = require('mongoose')
 
-const esquemadeJogadores= new mongoose.Schema(
+// Cria um modelo para o banco de dados
+const JogadoresSchema= new mongoose.Schema(
     {
-        numero: Number
+        ///// LEMBRAR DE ACRESCENTAR NA ROTA, PARA CRIAÇÃO DE NOVOS JOGADORES /////
+
+        numero: Number,
+        altura: Number,
+        peso: Number,
+        idade: Number
     }
 )
 
-module.exports = mongoose.model("Jogadores", esquemadeJogadores)
+// liberando o acesso do esquema 
+module.exports = mongoose.model("Jogadores", JogadoresSchema)
