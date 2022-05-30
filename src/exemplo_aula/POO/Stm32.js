@@ -9,9 +9,9 @@ class Stm32 extends DispositivoEletronico{
 }
 
 // OBJETO (projeto d/) // 
-const Stm32 = new Stm32(132, 3, 2, "Azul","I2C");
-console.log(`Ele contem ${Stm32.getPino()} pinos`);
-console.log(`Ele contem ${Stm32.getPino()} leds`);
-console.log(`Ele contem ${Stm32.getPino()} botões, sendo 1 programavel e outro para reset da placa`);
-console.log(`Sua cor ${Stm32.getPino()}`);
-console.log(`Ele está conectado no momento como ${Stm32.getPino()}`);
+const stm32 = new Stm32(132, 3, 2, "Azul","I2C");
+console.log(`Ele contem ${stm32.getPinos()} pinos`);
+console.log(`Ele contem ${stm32.getLeds()} leds`);
+console.log(`Ele contem ${stm32.getBotoes()} botões, sendo 1 programavel e outro para reset da placa`);
+console.log(`Sua cor é ${stm32.getCor()}`);
+console.log(`Ele está conectado no momento como ${stm32.getConexao()}`);
