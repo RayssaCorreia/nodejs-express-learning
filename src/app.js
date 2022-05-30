@@ -26,9 +26,8 @@ server.use((req,res) => res.status(404).sendFile(path.join(__dirname, "visualiza
 
 /// O QUE ESTÀ ACONTECENDO AQUI ?? /// Conexão com o banco de dados?
 const main = async () => {
-    await mongoose.connect('mongodb+srv://Rayssa:Pado1936@cluster0.ps3ou.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
+    await mongoose.connect(`mongodb+srv://${process.env.joaquim}:${process.env.camila}@cluster0.ps3ou.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`);
 }
-
 
 main()
 .then(() => {

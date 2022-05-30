@@ -6,7 +6,7 @@ const JogadoresSchema= new mongoose.Schema(
     {
         ///// LEMBRAR DE ACRESCENTAR NA ROTA, PARA CRIAÇÃO DE NOVOS JOGADORES /////
 
-        numero: Number,
+        NumeroDoJogador: Number,
         altura: Number,
         peso: Number,
         idade: Number

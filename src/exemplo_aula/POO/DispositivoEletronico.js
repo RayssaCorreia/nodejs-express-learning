@@ -43,3 +43,5 @@ class DispositivoEletronico{
 }
 
 module.exports = DispositivoEletronico;
+
+// Adicionar estatc Methods e genesis //
